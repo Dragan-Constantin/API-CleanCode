@@ -2,7 +2,7 @@ require('dotenv').config()
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const filmRoutes = require('./routes/filmRoutes');
+const movieRoutes = require('./routes/movieRoutes');
 
 
 const app = express();
@@ -22,7 +22,7 @@ app.use(express.json());
 
 app.use(cors());
 
-app.use('/movies', filmRoutes);
+app.use('/movies', movieRoutes);
 
 try {app.listen(port, () => {
   console.log(`API LAUNCH: \x1b[42mSUCCESS\x1b[0m`);
