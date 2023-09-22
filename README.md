@@ -1,6 +1,20 @@
 # API-CleanCode
 
-To launch the api, open your terminal (`ctrl+j`) and use:
+To run the app, you will have to install through node the following extensions: *Express*, *Mongoose*, and *Cors*.
+
+To install these, you can simply run this command:
+
+```shell
+npm i express mongoose cors
+```
+
+If it still doesn't work, you might have to install the MongoDB npm library. To do so, run the following:
+
+```shell
+npm install mongodb
+```
+
+To launch the api, open your terminal (`ctrl+j`) and run the following command:
 
 ```shell
 node app.js
