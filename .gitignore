@@ -1,3 +1,6 @@
+# Project specific files
+test/
+
 # VS:Code specific files
 .vscode/
 
