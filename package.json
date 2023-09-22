@@ -2,7 +2,7 @@
   "name": "api-cleancode",
   "version": "1.0.0",
   "description": "A api created for a clean code js",
-  "main": "app.js",
+  "main": "apiApp.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
