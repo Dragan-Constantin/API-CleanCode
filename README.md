@@ -63,7 +63,7 @@ For this project, the database used is a [MongoDB Atlas](https://www.mongodb.com
 
 <br>
 ⚠️ **IMPORTANT :** You WILL have to replace `<user>` and `<password>` by your own login credentials to this database.
-<br>
+<br><br>
 
 The file **addData.js** allows you to add a test movie collection (Star Wars based).
 
