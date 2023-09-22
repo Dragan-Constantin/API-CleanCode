@@ -4,7 +4,7 @@
 
 
 <h1 align="center"><b>Clean Code Course</b></h1>
-
+<h2 align="center"><b>API Project</b></h2>
 
 
 <p align="center">
@@ -22,7 +22,7 @@ The API is supposed to be linked to a database of movies, tv-shows, animes, and 
 ## Pre-requisite and dependencies
 
 For this app to run, you will need to have Node.js installed.
-You can download it on the Node.js [download page](https://nodejs.org/fr/download).
+You can download it on the Node.js [download page](https://nodejs.org/fr/download "NodeJS download page").
 
 To run the app, you might have to install through node the following JavaScript modules:
 
