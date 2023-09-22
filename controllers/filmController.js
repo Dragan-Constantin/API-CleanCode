@@ -1,35 +1,35 @@
 const Movie = require('../models/movie');
 
 // Create a new movie
-exports.createMovie = async (require, res) => {
+exports.createMovie = async (require, result) => {
   try {
     const movie = new Movie(require.body);
     const savedMovie = await movie.save();
-    res.status(201).json(savedMovie);
+    result.status(201).json(savedMovie);
   } catch (error) {
-    res.status(400).json({ error: error.message });
+    result.status(400).json({ error: error.message });
   }
 };
 
 // Read all movies
-exports.getAllMovies = async (require, res) => {
+exports.getAllMovies = async (require, result) => {
   try {
     const movies = await Movie.find();
-    res.json(movies);
+    result.json(movies);
   } catch (error) {
-    res.status(500).json({ error: 'Server error' });
+    result.status(500).json({ error: 'Server error' });
   }
 };
 
 // Read a movie by ID
-exports.getMovieById = async (require, res) => {
+exports.getMovieById = async (require, result) => {
   try {
     const movie = await Movie.findById(require.params.id);
     if (!movie) {
-      return res.status(404).json({ error: 'Movie not found' });
+      return result.status(404).json({ error: 'Movie not found' });
     }
-    res.json(movie);
+    result.json(movie);
   } catch (error) {
-    res.status(500).json({ error: 'Server error' });
+    result.status(500).json({ error: 'Server error' });
   }
 };
