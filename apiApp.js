@@ -4,8 +4,10 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const filmRoutes = require('./routes/filmRoutes');
 
+
 const app = express();
 const port = process.env.PORT || 3000;
+
 
 // Replace username, password  and database in the .env file by your
 // own login credentials and database to connect to your MongoDB database
@@ -14,6 +16,7 @@ mongoose.connect(`mongodb+srv://${process.env.USER}:${process.env.PASSWORD}@${pr
 useNewUrlParser: true,
   useUnifiedTopology: true,
 });
+
 
 app.use(express.json());
 
